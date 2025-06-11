@@ -1,4 +1,5 @@
-# Sales-Forecasting-for-Retail-Store# Retail Sales Forecasting System
+
+# Retail Sales Forecasting System
 ##  Features
 
 - **Multiple Forecasting Methods**: Implements 4 different forecasting algorithms
@@ -34,7 +35,7 @@
 - **Parameters**: Season length (default: 7 days for weekly patterns)
 - **Use Case**: Restaurants, retail stores with weekly patterns
 
-## Installation
+## 🛠️ Installation
 
 ### Prerequisites
 ```bash
@@ -46,20 +47,7 @@ pip install pandas numpy matplotlib datetime warnings
 git clone https://github.com/yourusername/retail-sales-forecasting.git
 cd retail-sales-forecasting
 ```
-### Using Custom Data
-```python
-# Your CSV should have columns: 'date' and 'sales'
-forecaster.load_custom_data('your_sales_data.csv')
-
-# Continue with forecasting methods...
-```
-### Data Requirements
-- **Date Column**: ISO format (YYYY-MM-DD) or any pandas-compatible date format
-- **Sales Column**: Numeric values representing daily sales
-- **Minimum Data**: At least 30 days for meaningful forecasts
-- **Recommended**: 6-12 months of historical data for best results
-
-##  Example Output
+## 🔍 Example Output
 
 ### Console Output
 ```
@@ -102,7 +90,7 @@ The system generates comprehensive charts showing:
 - Multiple forecast lines (different colors and styles)
 - Clear legends and date formatting
 - Customizable time ranges for display
-## Retail-Specific Features
+##  Retail-Specific Features
 
 ### Seasonal Patterns
 - **Weekly Seasonality**: Accounts for weekend vs. weekday sales patterns
@@ -114,6 +102,9 @@ The system generates comprehensive charts showing:
 - **Staff Scheduling**: Predict busy periods for workforce planning
 - **Budget Forecasting**: Project revenue for financial planning
 - **Marketing Timing**: Identify optimal periods for promotions
+
+## 📊 Performance Benchmarks
+
 ### Typical Accuracy Ranges
 | Method | MAPE Range | Best Use Case |
 |--------|------------|---------------|
@@ -121,23 +112,30 @@ The system generates comprehensive charts showing:
 | Exponential Smoothing | 4-12% | Trending sales |
 | Linear Trend | 6-20% | Growing business |
 | Seasonal Naive | 3-10% | Seasonal business |
-
-##  Error Handling
-
-The system includes robust error handling for:
-- Invalid date formats
-- Missing data points
-- Insufficient historical data
-- File loading errors
-- Calculation edge cases
 ### Development Setup
-
+```bash
 # Clone the repo
 git clone https://github.com/yourusername/retail-sales-forecasting.git
+
+# Install development dependencies
+pip install -r requirements-dev.txt
+
 # Run tests
 python -m pytest tests/
+```
+###  Future Enhancements
+
+### Planned Features
+- [ ] ARIMA forecasting method
+- [ ] Machine learning-based forecasts
+- [ ] Automated parameter optimization
+- [ ] Web-based dashboard
+- [ ] Real-time data integration
+- [ ] Multi-location forecasting
+- [ ] Export to Excel/PDF reports
 ## 📚 References
 
 - [Time Series Forecasting: Principles and Practice](https://otexts.com/fpp3/)
 - [Retail Analytics Best Practices](https://retailanalytics.org/)
 - [Python for Data Analysis](https://wesmckinney.com/book/)
+

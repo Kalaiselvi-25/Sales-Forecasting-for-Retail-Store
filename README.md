@@ -1,5 +1,5 @@
 
-# Retail Sales Forecasting System
+# Sales Forecasting For Retail Store
 ##  Features
 
 - **Multiple Forecasting Methods**: Implements 4 different forecasting algorithms

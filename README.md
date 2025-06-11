@@ -134,10 +134,6 @@ The system includes robust error handling for:
 
 # Clone the repo
 git clone https://github.com/yourusername/retail-sales-forecasting.git
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
 # Run tests
 python -m pytest tests/
 ## 📚 References
